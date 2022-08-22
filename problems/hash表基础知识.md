@@ -50,7 +50,7 @@
 
 ### 定义
 
-```
+```c++
 unordered_map<char, int> umap;
 ```
 
@@ -61,16 +61,16 @@ unordered_map<char, int> umap;
 
 ### 遍历
 
-可直接用for循环遍历
+可直接用for循环遍历，但只能输出value值
 
-```
+```c++
 for(int i = 0; i < umap.size(); i++)  cout<<umap[i]<<endl;
 ```
 
-也可用迭代器遍历(代码不太对，待调整)
+也可用迭代器遍历，可以输出key和value
 
-```
-for(auto i = umap.begin(); i!=umap.end(); i++)  cout<<i.first<<i.second<<endl;
+```c++
+for(auto i = umap.begin(); i!=umap.end(); i++)  cout<<i->first<<i->second<<endl;
+for(unordered_map<char, int>::iterator i = umap.begin(); i!=umap.end(); i++)  cout<<i->first<<i->second<<endl;
 ```
 
-- 
