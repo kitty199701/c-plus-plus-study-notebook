@@ -1,5 +1,7 @@
 # hash表
 
+**当我们遇到了要快速判断一个元素是否出现集合里的时候，就要考虑哈希法了。**
+
 三种实现方法：
 
 - unordered_set
@@ -44,6 +46,8 @@
 
 - `uset.empty()`
 
+- 将set转换为vector：`vector<int>(result_set.begin(), result_set.end());`
+
 
 
 ## unordered_map
@@ -55,8 +59,17 @@ unordered_map<char, int> umap;
 ```
 
 - `umap.begin()`
+
 - `umap.end()`
+
 - `umap.size()`
+
+- `umap.insert(pair<int, int>(a, b));` 
+
+- `aotu iter = umap.find(value)`返回value在map中的位置，位置是一个迭代器，如果返回值为`umap.end()`，说明没找到
+
+  找到之后可以使用iter->second
+
 - 
 
 ### 遍历
