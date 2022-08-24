@@ -71,6 +71,22 @@ unordered_map<char, int> umap;
   找到之后可以使用iter->second
 
 - 
+# unordered_map排序
+
+**必须转换成vector，才可以用sort函数排序。**
+
+```
+bool mycmp(const pair<string, int>& a, const pair<string, int>& b)
+{
+    if(a.second != b.second)  return a.second < b.second;
+    return a.first<b.first;
+}
+
+vector<pair<char, int>> vec(umap.begin(), umap.end());//unordered_map转换为vector
+sort(vec.begin(), vec.end(), mycmp);
+```
+
+
 
 ### 遍历
 

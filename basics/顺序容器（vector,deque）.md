@@ -1,5 +1,23 @@
 # 顺序容器（vector,deque）
 
+# vector
+
+- 初始化：
+
+```
+vector<int> vec;//初始化为空
+vector<int> vec(n,0);//初始化为n个0
+```
+
+- 二维vector初始化：
+
+```
+vector<vector<int>> vec;
+vector<vector<int>> vec(m, vector<int>(n,0));//初始化为m*n的矩阵，每个元素为0
+```
+
+- 
+
 如果要return vector 可以这样写：
 
 `return {1,2,3};`
