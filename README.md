@@ -2,6 +2,8 @@
 
 自我复习记录，大多数参考[代码随想录](https://github.com/youngyangyang04/leetcode-master/blob/master/README.md)
 
+[Git操作](./basics/Git操作.md)
+
 ## 简单数据结构
 
 1. [数组](./basics/数组.md)
