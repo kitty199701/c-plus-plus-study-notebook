@@ -4,6 +4,8 @@
 
 [Git操作](./basics/Git操作.md)
 
+[linux常用操作](./basics/linux常用操作.md)
+
 ## 简单数据结构
 
 1. [数组](./basics/数组.md)
