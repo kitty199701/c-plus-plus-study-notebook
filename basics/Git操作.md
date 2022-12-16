@@ -107,23 +107,30 @@ git branch daily/0.0.0
 ```
 创建一个名为 `daily/0.0.0` 的日常开发分支，分支名只要不包括特殊字符即可
 
-2. 查看当前项目分支列表
+2. 查看本地分支列表
 ```
 git branch
 ```
 
 
-3. 删除分支
+3. 删除本地分支
 ```
 git branch -d daily/0.0.1
 ```
 
-4. 重命名分支
+4. 重命名本地分支
 ```
 git branch -m daily/0.0.0 daily/0.0.1
 ```
 
-5. 切换到另一分支上工作
+5. 切换到本地另一分支上工作
 ```
 git checkout daily/0.0.1
 ```
+
+6. 新建一个与本地分支同名的远程分支，并把本地分支push进去
+
+```
+git push -u origin <本地分⽀名> 
+```
+由于远程库是空的，我们第⼀次推送master分⽀时，加上了-u参数，Git不但会把本地的master分⽀内容推送的远程新的master分⽀，还会把本地的master分⽀和远程的master分⽀关联起来，在以后的推送或者拉取时就可以简化命令为git push。这⾥的master就是上⾯的<本地分⽀名>加了参数-u后，以后即可直接⽤git push 代替git push origin master

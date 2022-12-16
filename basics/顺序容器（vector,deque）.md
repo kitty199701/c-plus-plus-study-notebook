@@ -16,7 +16,7 @@ vector<vector<int>> vec;
 vector<vector<int>> vec(m, vector<int>(n,0));//初始化为m*n的矩阵，每个元素为0
 ```
 
-- 
+- vec.push_back(value);
 
 如果要return vector 可以这样写：
 

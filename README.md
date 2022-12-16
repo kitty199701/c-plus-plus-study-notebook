@@ -6,6 +6,10 @@
 
 [linux常用操作](./basics/linux常用操作.md)
 
+[#include <cmath>](./basics/cmath.md)
+
+[ns3命令](./basics/ns3命令.md)
+
 ## 简单数据结构
 
 1. [数组](./basics/数组.md)
